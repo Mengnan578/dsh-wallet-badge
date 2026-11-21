@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "API balance",
+    "description": "Shows the remaining DeepSeek API balance in the sidebar and checks for changes every minute, without opening the platform website."
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "name": "dsh-wallet-badge",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Show the DeepSeek API wallet balance in the DSH sidebar and keep it refreshed automatically.",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-sidebar",
+        "@deepseek-ai/dsh-client-ui-settings-account"
+      ]
+    }
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "balance",
+    "wallet",
+    "usage",
+    "web-ui"
+  ],
+  "author": "Mengnan578",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mengnan578/dsh-wallet-badge.git"
+  },
+  "homepage": "https://github.com/Mengnan578/dsh-wallet-badge#readme",
+  "bugs": {
+    "url": "https://github.com/Mengnan578/dsh-wallet-badge/issues"
+  }
+}
